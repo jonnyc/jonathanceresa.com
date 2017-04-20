@@ -4,19 +4,24 @@
 
 .headshot {
   position: absolute;
-  top: 10%;
+  top: 25%;
   width: 100%;
   text-align: center;
+  opacity: 1;
+}
+
+.headshot img {
+  width: 35%
 }
 
 body, html {
   height: 100%;
   margin: 0;
   font: 400 15px/1.8 "Lato", sans-serif;
-  color: #777;
+  color: #fff;
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.parallax1, .parallax2 {
   position: relative;
   opacity: 0.65;
   background-attachment: fixed;
@@ -25,17 +30,22 @@ body, html {
   background-size: cover;
 
 }
-.bgimg-1 {
-  background-image: url("img_parallax.jpg");
+.parallax1 {
+  background-image: url('../assets/img/bgrnd1.jpg');
   min-height: 100%;
 }
 
-.bgimg-2 {
-  background-image: url("img_parallax2.jpg");
+.parallax2 {
+  background-image: url('../assets/img/bgrnd2.jpg');
   min-height: 400px;
 }
 
-.bgimg-3 {
-  background-image: url("img_parallax3.jpg");
-  min-height: 400px;
+#about {
+  background-color: #ddd;
+  position: relative;
+}
+
+#home {
+  position: relative;
+  height: 100%
 }

@@ -24,9 +24,13 @@ body, html {
 }*/
 
 #contact {
-  /*min-height: 100vh;*/
+  /*min-height: 90vh;*/
   background-color: #ccc;
 }
+
+/*#contact .row {
+  margin: 5% auto;
+}*/
 
 .navbar-default {
   background-color: #000;

@@ -15,15 +15,13 @@ body, html {
   min-height: 50vh;
 }
 
-#about .col-xs-12 {
-  text-align: justify;
-  vertical-align: middle;
+/*#about .col-xs-12 {
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   margin: 10%;
-}
+}*/
 
 #contact {
   min-height: 100vh;
@@ -52,9 +50,13 @@ body, html {
   min-height: 50vh;
 }
 
-.vertical-align {
-    display: flex;
-    align-items: center;
+.center-align {
+  /*position: relative;*/
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 10%;
 }
 
 /* Turn off parallax scrolling for tablets and phones */

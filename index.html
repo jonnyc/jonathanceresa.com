@@ -40,9 +40,9 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse navbar-right">
           <ul class="nav navbar-nav">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a data-scroll href="#home">Home</a></li>
+            <li><a data-scroll href="#about">About</a></li>
+            <li><a data-scroll href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -106,6 +106,69 @@
 
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/scrollreveal.min.js"></script>
+    <script type="text/javascript" src="js/smooth-scroll.js"></script>
+
+    <!-- Scroll Reveal Configuration -->
+    <script type="text/javascript">
+
+      window.sr = ScrollReveal();
+      sr.reveal('.navbar', {
+        duration : 1000,
+        origin : 'top'
+      });
+      sr.reveal('#home img', {
+        duration : 1500,
+        origin : 'bottom',
+        distance : '50px'
+      });
+      sr.reveal('#about h3', {
+        duration : 1000,
+        delay: 200,
+        origin : 'top'
+      });
+      sr.reveal('#about p', {
+        duration : 2000,
+        delay: 200,
+        origin : 'top'
+      });
+      sr.reveal('#quote h2', {
+        duration : 1000,
+        delay: 200,
+        origin : 'top'
+      });
+      sr.reveal('#contact .row-fluid', {
+        duration : 1000,
+        delay: 200,
+        origin : 'top'
+      });
+
+    </script>
+
+    <script>
+    	smoothScroll.init({
+        speed: 1000,
+        offset: "25"
+      });
+    </script>
+
+    <!-- Smooth Scrolling -->
+    <!-- <script>
+        $(function() {
+          $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html, body').animate({
+                  scrollTop: target.offset().top
+                }, 1000);
+                return false;
+              }
+            }
+          });
+        });
+    </script> -->
 
   </body>
 </html>

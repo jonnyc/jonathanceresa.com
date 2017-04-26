@@ -1,40 +1,49 @@
 body, html {
-  height: 100%;
   color: #fff;
+  background-color: #000;
   text-align: center;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+#home {
+  height: 100%
+}
+
+#home .container-fluid {
+  height: 100%;
 }
 
 #home img {
   width: 35%;
-  /*padding-top: 25%;*/
   max-width: 250px;
 }
 
 #about {
   background-color: #ccc;
-  min-height: 50vh;
 }
 
-/*#about .col-xs-12 {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: 10%;
-}*/
-
 #contact {
-  /*min-height: 90vh;*/
   background-color: #ccc;
 }
 
-/*#contact .row {
-  margin: 5% auto;
-}*/
+#contact h2 {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
 
 .navbar-default {
   background-color: #000;
   border: none;
+}
+
+.navbar-brand {
+  color: #ccc !important;
+  font-weight: bold !important;
 }
 
 .parallax1, .parallax2 {
@@ -46,20 +55,26 @@ body, html {
 }
 .parallax1 {
   background-image: url('../assets/img/bgrnd1.jpg');
-  min-height: 100vh;
+  height: 100%;
 }
 
 .parallax2 {
   background-image: url('../assets/img/bgrnd2.jpg');
-  min-height: 50vh;
 }
 
-.center-align {
-  /*position: relative;*/
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.container-fluid{
+  display: table;
+  width: 100%;
+  padding: 0;
+}
+
+.row-fluid {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.centering {
+  float: none;
   margin: 10%;
 }
 

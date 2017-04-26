@@ -8,6 +8,7 @@ body, html {
 
 p {
   font-family: 'Roboto', Arial, sans-serif;
+  font-size: 18px;
 }
 
 #home {
@@ -23,17 +24,12 @@ p {
   max-width: 250px;
 }
 
-#about {
-  background-color: #ccc;
-}
-
-#contact {
-  background-color: #ccc;
+#about, #contact{
+  background-color: #bbb;
 }
 
 #contact h2 {
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding: 5% 0;
 }
 
 .navbar-default {
@@ -42,8 +38,11 @@ p {
 }
 
 .navbar-brand {
-  color: #ccc !important;
-  font-weight: bold !important;
+  color: #ddd !important;
+}
+
+#navbar a:hover {
+  color: #ddd !important;
 }
 
 .parallax1, .parallax2 {

@@ -27,6 +27,7 @@
 
   <body>
 
+    <!-- Navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -48,6 +49,7 @@
       </div>
     </nav>
 
+    <!-- Main Site -->
     <section id="home">
       <div class="container-fluid">
         <div class="row-fluid parallax1">
@@ -104,6 +106,7 @@
       </div>
     </section>
 
+    <!-- Javascript -->
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/scrollreveal.min.js"></script>
@@ -145,30 +148,13 @@
 
     </script>
 
+    <!-- smooth scroll initialization -->
     <script>
     	smoothScroll.init({
         speed: 1000,
         offset: "25"
       });
     </script>
-
-    <!-- Smooth Scrolling -->
-    <!-- <script>
-        $(function() {
-          $('a[href*="#"]:not([href="#"])').click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-              var target = $(this.hash);
-              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-              if (target.length) {
-                $('html, body').animate({
-                  scrollTop: target.offset().top
-                }, 1000);
-                return false;
-              }
-            }
-          });
-        });
-    </script> -->
 
   </body>
 </html>

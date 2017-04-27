@@ -1,5 +1,5 @@
 body, html {
-  color: #fff;
+  color: #eee;
   background-color: #000;
   text-align: center;
   height: 100%;
@@ -25,7 +25,11 @@ p {
 }
 
 #about, #contact{
-  background-color: #bbb;
+  background-color: #3d3e3e;
+}
+
+#quote {
+  color: #fff;
 }
 
 #contact h2 {
